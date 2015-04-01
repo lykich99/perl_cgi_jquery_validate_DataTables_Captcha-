@@ -1,0 +1,34 @@
+	#commentForm {
+		width: 600px;
+	}
+	#commentForm label {
+		width: 250px;
+	}
+	#commentForm label.error, #commentForm input.submit {
+		margin-left: 53px;
+	}
+	#signupForm {
+		width: 670px;
+	}
+	#signupForm label.error {
+		margin-left: 10px;
+		width: auto;
+		display: inline;
+	}
+	#newsletter_topics label.error {
+		display: none;
+		margin-left: 103px;
+	}
+    #main {
+      padding-left: 30%;
+    
+    }
+    .form_width {
+      width: 300px;
+    }
+     textarea {
+      height: 100px;
+     }
+    .captha_img {
+      margin-left: 80px;
+    }

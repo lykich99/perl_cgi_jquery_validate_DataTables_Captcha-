@@ -1,0 +1,80 @@
+<h1 id="banner"> Guestbook - perl, cgi, jQuery validate, DataTables example </h1>
+<div id="main">
+	<h4>Please provide your name, email address and a comment</h4><br>
+	<form class="cmxform" id="commentForm" method="get" action="">
+		<fieldset>
+			<p>
+				<label for="cname">Name (required, at least 2 characters)</label>
+				<input class="form_width" id="cname" name="name" minlength="2" type="text" required>
+			</p>
+			<p>
+				<label for="cemail">E-Mail (required)</label>
+				<input class="form_width" id="cemail" type="email" name="email" required>
+			</p>
+			<p>
+				<label for="curl">URL (optional)</label>
+				<input class="form_width" id="curl" type="url" name="url">
+			</p>
+			<p>
+				<label for="ccomment">Your comment (required)</label>
+				<textarea class="form_width" id="ccomment" name="comment" required></textarea>
+			</p>
+			<p>
+			  <label for="captcha">Captcha <img class="captha_img" src="[% cap_img %]" /></label>
+			  <input  id="capa" name="capa" minlength="4" maxlength="4" type="text" required>
+			  <input type="hidden" name="md5sum" value="[% md5sum %]">
+			</p>
+			<p>
+				<input class="submit" type="submit" style=" margin-left: 270; width: 100;" value="Submit">
+			</p>
+		</fieldset>
+	</form>
+	
+</div>
+<div class="div_table">
+<hr>
+<table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Comment</th>
+            <th>Url</th>
+            <th>Agent</th>
+            <th>Ip</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+ 
+    <tfoot>
+        <tr>
+             <th>Name</th>
+            <th>Email</th>
+            <th>Comment</th>
+            <th>Url</th>
+            <th>Agent</th>
+            <th>Ip</th>
+            <th>Date</th>
+        </tr>
+    </tfoot>
+ 
+    <tbody>
+
+      [% FOREACH r IN row  %]
+        <tr>
+            <td> [% r.name %] </td>
+            <td> [% r.email %]</td>
+            <td> [% r.text %]</td>
+            <td> [% r.url %]</td>
+            <td> [% r.agent %]  </td>
+            <td> [% r.ip %] </td>
+            <td> [% r.date %] </td>
+        </tr>
+      [% END %]
+      
+      
+    </tbody>
+</table>
+<hr>
+</div>
+

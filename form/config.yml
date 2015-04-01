@@ -1,0 +1,24 @@
+plugins:
+   Database:
+      driver: 'mysql'
+      database: ''
+      host: ''
+      port: 3306
+      username: ''
+      password: ''
+      dbi_params:
+             RaiseError: 1
+             AutoCommit: 1
+
+captcha:
+   length:         4   
+   expire:         300       # optional. default 300
+   width :         25        # optional. default 25
+   height:         35        # optional. default 35
+   keep_failures:  0         # optional, defaults to 0(false)
+   debug:          0         # optional. default 0
+   
+
+
+DataTabble:
+   lengthMenu: 10
