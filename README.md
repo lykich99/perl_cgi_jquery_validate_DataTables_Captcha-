@@ -38,10 +38,10 @@
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;<br>
 
 <p>C. You have to access cgi or mod_perl to form/form.pl</p>
-   Create access for /outputcaptcha ( chmod 777 /outputcaptcha ).<br>
-   Create access for /form/tmp/captcha/ ( chmod -R 777 /form/tmp/captcha/ ).<br>
-   You have to install modules from CPAN or other it.<br>
-   Error log web-server can show what modules have not been installed.<br>
+     You have to make readable dir /outputcaptcha ( chmod 777 /outputcaptcha ).
+     You have to make readable dir /form/tmp/captcha/ ( chmod -R 777 /form/tmp/captcha/ ).
+     You have to install modules from CPAN or other it.
+     Error log web-server can show what modules have not been installed.
 
 
 
