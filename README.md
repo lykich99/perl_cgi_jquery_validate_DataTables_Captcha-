@@ -37,7 +37,7 @@
   PRIMARY KEY (`id`)<br>
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;<br>
 
-<p>C. You have to access cgi or mod_perl to form/form.pl</p>
+<p>C. You have to access cgi or mod_perl to form/form.pl (/form/*) </p>
      You have to make readable dir /outputcaptcha ( chmod 777 /outputcaptcha ).
      You have to make readable dir /form/tmp/captcha/ ( chmod -R 777 /form/tmp/captcha/ ).
      You have to install modules from CPAN or other it.
